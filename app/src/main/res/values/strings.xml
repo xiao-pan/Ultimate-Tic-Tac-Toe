@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">终极井字棋</string>
+    <string name="long_app_name">Ultimate Tic Tac Toe</string>
+    <string name="action_settings">Settings</string>
+    <string name="restart_label">Restart</string>
+    <string name="main_menu_label">Main Menu</string>
+    <string name="declare_winner">%1$s is the winner</string>
+    <string name="continue_label">继续游戏</string>
+    <string name="new_game_label">开始游戏</string>
+    <string name="settings_label">设置</string>
+    <string name="settings_text">游戏设置</string>
+
+    <string name="help_label">帮助</string>
+    <string name="help_title">★\t游戏说明</string>
+    <string name="help_sure">确定</string>
+    <string name="help_cancel">取消</string>
+    <string name="help_text">游戏帮助</string>
+
+    <string name="help_introduction_title">游戏简介</string>
+    <string name="help_introduction_text">
+        \t\t\t\t终极版井字棋（Ultimate tic-tac-toe）是数学家们玩的复杂版本的井字棋，其最初的想法来源于国外的一群数学家，并经由一位来自奥克兰名叫Ben Orlin的老师发布在网络上才得以传播。整个游戏包括1个大棋盘和9个小棋盘。一个小棋盘包含9个小格子，共81个格子。
+    </string>
+
+    <string name="help_rule_title">游戏规则</string>
+    <string name="help_rule_text">
+        \t\t\t\t不同于传统的3*3井字棋，9*9井字棋的规则更有趣味性，其中重要的规则包括:\n\n
+        (1)选择下棋的位置取决于对手上一步所走的位置。不管对手选择哪个小棋盘下棋，都只能在大棋盘对应的小棋盘位置走一下步。\n\n
+        (2)若小棋盘已经分出胜负但还有空格子，那么只能在该小棋盘内选择其中一个空格子下棋。\n\n
+        (3)若小棋盘没有可下的格子，那么可以选择整个棋盘中任意一个可下的的格子下棋。\n\n
+        (4)若小棋盘在走满之前还没分出胜负（即出现平局），那么程序将其判为双方都赢。\n\n
+        (5)游戏获胜的方式:出现3个以水平、垂直或对角线的形式连成线的小棋盘.
+    </string>
+
+    <string name="help_operation_title">游戏操作</string>
+    <string name="help_operation_text">
+        游戏操作非常简单，通过触屏点击格子下棋即可。
+    </string>
+
+    <string name="quit_label">退出</string>
+    <string name="quit_title">提示</string>
+    <string name="quit_sure">确定</string>
+    <string name="quit_cancel">取消</string>
+    <string name="quit_message">\t\t\t退出游戏</string>
+    <string name="ok_label">确定</string>
+
+</resources>

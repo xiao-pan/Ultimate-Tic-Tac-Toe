@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="313dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/menu_background"
+    android:elevation="@dimen/elevation_high"
+    android:orientation="vertical"
+    android:padding="@dimen/menu_padding"
+    tools:context=".SettingActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_vertical"
+       android:layout_marginBottom="@dimen/menu_space"
+       android:gravity="center"
+       android:text="@string/settings_text"
+       android:textAppearance="?android:textAppearanceLarge"
+       android:textSize="@dimen/menu_text_size" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="48dp"
+       android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/brightView"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.62"
+          android:gravity="center"
+          android:text="游戏亮度"
+          android:textSize="18sp" />
+
+      <SeekBar
+          android:id="@+id/brightSeekBar"
+          style="@style/Widget.AppCompat.SeekBar.Discrete"
+          android:layout_width="195dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:max="10"
+          android:progress="3" />
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="48dp"
+       android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/musicView"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.62"
+          android:gravity="center"
+          android:text="游戏音效"
+          android:textSize="18sp" />
+
+      <SeekBar
+          android:id="@+id/musicSeekBar"
+          style="@style/Widget.AppCompat.SeekBar.Discrete"
+          android:layout_width="195dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:max="10"
+          android:progress="3" />
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="48dp"
+       android:layout_weight="0.23"
+       android:orientation="horizontal"
+       android:weightSum="1">
+
+      <TextView
+          android:id="@+id/modelView"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.18"
+          android:gravity="center"
+          android:text="游戏模式："
+          android:textSize="18sp" />
+
+      <RadioGroup
+          android:id="@+id/modelRadioGroup"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:weightSum="1">
+
+         <RadioButton
+             android:id="@+id/simple"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_marginRight="10dp"
+             android:layout_weight="3.60"
+             android:checked="false"
+             android:text="简单"
+             android:textSize="18sp" />
+
+         <RadioButton
+             android:id="@+id/hard"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:text="困难"
+             android:textSize="18sp" />
+
+      </RadioGroup>
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="48dp"
+       android:orientation="horizontal"
+       android:weightSum="1">
+
+      <TextView
+          android:id="@+id/firstView"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="0.23"
+          android:gravity="center"
+          android:text="开局先手："
+          android:textSize="18sp" />
+
+      <RadioGroup
+          android:id="@+id/firstRadioGroup"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+
+         <RadioButton
+             android:id="@+id/firstP"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_marginRight="10dp"
+             android:checked="false"
+             android:text="玩家"
+             android:textSize="18sp" />
+
+         <RadioButton
+             android:id="@+id/firstC"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:text="电脑"
+             android:textSize="18sp" />
+
+      </RadioGroup>
+
+   </LinearLayout>
+
+   <Button
+       android:id="@+id/intentButton"
+       android:layout_width="100dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_margin="@dimen/menu_button_margin"
+       android:onClick="show"
+       android:padding="@dimen/menu_button_padding"
+       android:text="@string/ok_label" />
+
+</LinearLayout>

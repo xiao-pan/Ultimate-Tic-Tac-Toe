@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+   <!-- Base application theme. -->
+   <style name="AppTheme"
+          parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+      <!-- Customize your theme here. -->
+   </style>
+
+   <style name="TransparentWindowBg">
+      <item name="android:windowBackground">@android:color/transparent</item>
+   </style>
+
+
+   <style name="TileButton">
+      <item name="android:layout_width">@dimen/tile_size</item>
+      <item name="android:layout_height">@dimen/tile_size</item>
+      <item name="android:layout_margin">@dimen/tile_margin</item>
+      <item name="android:background">#00000000</item>
+      <item name="android:padding">@dimen/tile_padding</item>
+      <item name="android:scaleType">centerCrop</item>
+      <item name="android:src">@drawable/tile</item>
+   </style>
+
+   <style name="Widget.SeekBar.Normal"  parent="@android:style/Widget.SeekBar">
+      <item name="android:maxHeight">8.0dip</item>
+      <item name="android:indeterminateOnly">false</item>
+      <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+      <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+      <item name="android:minHeight">8.0dip</item>
+      <item name="android:thumb">@drawable/seek_thumb</item>
+      <item name="android:thumbOffset">10.0dip</item>
+   </style>
+
+</resources>

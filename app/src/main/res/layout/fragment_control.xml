@@ -1,0 +1,30 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/control_padding" tools:context=".GameActivity">
+
+    <Button
+        android:id="@+id/button_main"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/setting_background"
+        android:drawableTop="@drawable/ic_home_blue_500_48dp"
+        android:elevation="@dimen/elevation_low" />
+
+    <Button
+        android:id="@+id/button_restart"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/setting_background"
+        android:drawableTop="@drawable/ic_settings_backup_restore_blue_500_48dp"
+        android:elevation="0dp" />
+
+</LinearLayout>
+
+
